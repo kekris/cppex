@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	const int conv = 12;
-	cout << "Enter your height in inches:_____\b\b\b\b\b" << endl;
+	cout << "Enter your height in inches:___\b\b\b";
 	int height;
 	cin >> height;
 	cout << "Your height is " << height/conv << " feet and " << height%conv << " inches." << endl;
