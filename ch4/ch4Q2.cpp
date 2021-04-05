@@ -10,7 +10,10 @@ int main()
 		string dessert;
 		string output;
 	};
-	inputs usr_input
+	inputs usr_input = 
+	{
+	"","",""
+	};
 	cout << "Enter your name: " << endl;
 	getline(cin,usr_input.name);
 	cout << "Enter your favorite dessert: " << endl;
