@@ -17,8 +17,8 @@ int main()
 	cout << "Enter your name: " << endl;
 	getline(cin,usr_input.name);
 	cout << "Enter your favorite dessert: " << endl;
-	getline(cin,usr_input.dessert)
+	getline(cin,usr_input.dessert);
 	usr_input.output = "I have some delicious "+ usr_input.dessert+" for you, "+usr_input.name+".";
-	cout << usr_input.output;
+	cout << usr_input.output << endl;
 	return 0;
 }
