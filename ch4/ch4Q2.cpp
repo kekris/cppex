@@ -1,5 +1,5 @@
 //Programming Exercises on page 192 of C++ prime (vol.1) chap4
-#include <iosteam>
+#include <iostream>
 #include <string>
 using namespace std;
 int main()
@@ -9,7 +9,7 @@ int main()
 		string name;
 		string dessert;
 		string output;
-	}
+	};
 	inputs usr_input
 	cout << "Enter your name: " << endl;
 	getline(cin,usr_input.name);
