@@ -1,2 +1,2 @@
 Assignments for the MIT Open Course
-Current progress: Finished L1, up to L2
+Current progress: Finished L5, up to L6
