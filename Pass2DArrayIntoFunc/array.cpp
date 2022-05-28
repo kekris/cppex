@@ -18,11 +18,11 @@ void passFunc(int m,int n, int **array){
 	return;
 }
 int main(){
-	int **array;
+	int **array; // pointer to the 2D array
 	int m = 3, n = 3;
-	array = new int *[n];   // ------
+	array = new int *[n];   // array is then a 1D array of pointers, type double * [nz]
 	for(int i = 0; i <n; i++){
-    	array[i] = new int [n]; // ------
+    	array[i] = new int [n]; // Each element of T is then a 1D array of double [nz]
 	}	
 	cout << array[m-1][n-1] << endl;
 	passFunc(m,n,array);
