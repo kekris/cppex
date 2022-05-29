@@ -20,8 +20,8 @@ void passFunc(int m,int n, int **array){
 int main(){
 	int **array; // pointer to the 2D array
 	int m = 3, n = 3;
-	array = new int *[n];   // array is then a 1D array of pointers, type double * [nz]
-	for(int i = 0; i <n; i++){
+	array = new int *[m];   // array is then a 1D array of pointers, type double * [nz]
+	for(int i = 0; i < m; i++){
     	array[i] = new int [n]; // Each element of T is then a 1D array of double [nz]
 	}	
 	cout << array[m-1][n-1] << endl;
