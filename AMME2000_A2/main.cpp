@@ -15,7 +15,7 @@ int main(){
 	}
 	initialise_TemperatureField(BCT, BCB, BCL, BCR, nx, nz, T, T_old);	
 	GaussSeidel(T, T_old, nx, nz, &calc_res, res, alpha, gamma);
-	cout << "Mid-point Temperature: T(33,33) = " << T[32][32] << endl;
-	printTemp(T, nx, nz);
+	cout << "Mid-point Temperature: T(33,33) = " << T[33-1][33-1] << endl;
+//	printTemp(T, nx, nz);
 	return 0;
 }
