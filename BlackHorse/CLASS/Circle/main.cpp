@@ -3,8 +3,8 @@
 int main(){
 	Point center,P;	double r; Circle c;
 	center.setPoint(5,5); r = 10;
-	c.setCircleCenter(center); c.serCircleRadius(r);
-	P.setPoint(5,15);
+	c.setCircleCenter(center); c.setCircleRadius(r);
+	P.setPoint(5,5);
 	c.isInCircle(P);
 	return 0;
 }
