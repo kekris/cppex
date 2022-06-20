@@ -18,11 +18,12 @@ class PointArray{
 	private: 
 		int size;
 		Point * points;
-		void resize(int n);
 	public:
 		PointArray(){size = 0;points = new Point [0];};
 		PointArray(const Point points[], const int size);
 		~PointArray(){ if (points != NULL) { delete[] points;}; }; 
 		PointArray(const PointArray &pv);
+		void print();
+		void resize(int n);
 		
 };

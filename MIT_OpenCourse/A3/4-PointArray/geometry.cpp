@@ -27,5 +27,26 @@ PointArray::PointArray(const PointArray &pv){
 	}
 };
 void PointArray::resize(int n){
+	int min_size = (n < size ? n : size);
+	cout << min_size << endl;
+	Point * tmp = new Point [min_size];
+	for (int i = 0; i < min_size; i++){
+		tmp[i] = points[i];
+	}
+	delete[] points;
 	size = n;
+	points = new Point [size];
+	for (int i = 0; i < size; i++){
+		if (i < min_size){
+			points[i] = tmp[i];
+		} else {
+			points[i].setX(0); points[i].setY(0);	
+		}
+	}
+	delete[] tmp;
+};
+void PointArray::print(){
+	for (int i = 0; i < size; i++){
+		cout << "Point: " << points[i].getX() << "," << points[i].getY() << endl;
+	}
 };

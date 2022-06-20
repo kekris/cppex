@@ -11,7 +11,12 @@ int main(){
 	PointArray pa1(pts,3);
 	PointArray pa2 = pa1;
 
-	cout << pa2.points[2].getX() << endl;
+	pa2.print();
+	
+	cout << "-----------------------------------" << endl;
+	
+	pa2.resize(10);
+	pa2.print();
 	
 	return 0;
 }
