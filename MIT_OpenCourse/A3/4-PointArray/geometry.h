@@ -19,10 +19,10 @@ class PointArray{
 		int size;
 		Point * points;
 	public:
-		PointArray(){size = 0;points = new Point [0];};
-		PointArray(const Point points[], const int size);
-		~PointArray(){ if (points != NULL) { delete[] points;}; }; 
-		PointArray(const PointArray &pv);
+		PointArray(){size = 0;points = new Point [0];};		// constructor
+		PointArray(const Point points[], const int size);		// constructor
+		~PointArray(){ if (points != NULL) { delete[] points;}; };	// destructor
+		PointArray(const PointArray &pv);				// copy constructor
 		void print();
 		void resize(int n);
 		
