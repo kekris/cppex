@@ -28,9 +28,7 @@ void test01(){
 class AbstractCalculator{
 	public:
 		int m_Num1, m_Num2;
-		virtual int getResult(){
-			return 0;
-		}
+		virtual int getResult() = 0; // pure virtual function
 };
 
 // plus class
